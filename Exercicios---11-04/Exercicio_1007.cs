@@ -1,6 +1,6 @@
 ﻿namespace Exercicios___11_04
 {
-    public class Exercicios
+    public class Exercicio_1007
     {
         public static void Main(string[] args)
         {
