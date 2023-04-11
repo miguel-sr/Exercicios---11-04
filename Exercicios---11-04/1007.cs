@@ -15,8 +15,8 @@
 
             Console.WriteLine("Digite um valor para D: ");
             var D = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine((A * B) - (C * D));
+            
+            Console.WriteLine("DIFERENCA = " + Convert.ToString((A * B) - (C * D)));
         }
     }
 }
