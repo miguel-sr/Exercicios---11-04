@@ -4,27 +4,26 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Digite um valor para A:");
-            var A = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Digite um valor para B:");
-            var B = Convert.ToDouble(Console.ReadLine());
+            string valores = Console.ReadLine();
+            string[] subvalores = valores.Split(' ');
 
-            Console.WriteLine("Digite um valor para C:");
-            var C = Convert.ToDouble(Console.ReadLine());
+            double A = double.Parse(subvalores[0]);
+            double B = double.Parse(subvalores[1]);
+            double C = double.Parse(subvalores[2]);
 
-            var delta = B * B - 4 * A * C;
+            double delta = B * B - 4 * A * C;
             
             if (delta >= 0.0 && A != 0.0)
             {
-                var x1 = Math.Round((-B + Math.Sqrt(delta)) / (2 * A), 5);
-                var x2 = Math.Round((-B - Math.Sqrt(delta)) / (2 * A), 5);
+                double x1 = Math.Round((-B + Math.Sqrt(delta)) / (2 * A), 5);
+                double x2 = Math.Round((-B - Math.Sqrt(delta)) / (2 * A), 5);
 
                 Console.WriteLine("R1 = " + x1);
                 Console.WriteLine("R2 = " + x2);
             } else
             {
-                Console.WriteLine("Impossível calcular");
+                Console.WriteLine("Impossivel calcular");
             }
             
         }

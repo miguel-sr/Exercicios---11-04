@@ -4,7 +4,6 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Qual o seu DDD?");
             var ddd = Console.ReadLine();
 
             switch(ddd)
@@ -42,7 +41,7 @@
                     break;
 
                 default:
-                    Console.WriteLine("DDD não encontrado");
+                    Console.WriteLine("DDD nao cadastrado");
                     break;
             }
         }
