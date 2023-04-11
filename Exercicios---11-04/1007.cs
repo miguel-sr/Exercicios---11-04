@@ -4,7 +4,19 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Digite um valor para A: ");
+            var A = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite um valor para B: ");
+            var B = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite um valor para C: ");
+            var C = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite um valor para D: ");
+            var D = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine((A * B) - (C * D));
         }
     }
 }
