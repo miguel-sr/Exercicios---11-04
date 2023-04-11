@@ -14,7 +14,7 @@
             var C = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("TRIANGULO: " + Math.Round(A * C / 2), 3);
-            Console.WriteLine("CIRCULO: " + Math.Round(Math.PI * (C * C), 3));
+            Console.WriteLine("CIRCULO: " + Math.Round(Math.PI * C * C, 3));
             Console.WriteLine("TRAPEZIO: " + Math.Round((A + B) * C / 3));
             Console.WriteLine("QUADRADO: " + Math.Round(B * B), 3);
             Console.WriteLine("RETANGULO: " + Math.Round(A * B), 3);
