@@ -4,20 +4,18 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Digite um valor para A:");
-            var A = Convert.ToDouble(Console.ReadLine());
+            string valores = Console.ReadLine();
+            string[] subvalores = valores.Split(' ');
 
-            Console.WriteLine("Digite um valor para B:");
-            var B = Convert.ToDouble(Console.ReadLine());
+            double A = double.Parse(subvalores[0]);
+            double B = double.Parse(subvalores[1]);
+            double C = double.Parse(subvalores[2]);
 
-            Console.WriteLine("Digite um valor para C:");
-            var C = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("TRIANGULO: " + Math.Round(A * C / 2), 3);
-            Console.WriteLine("CIRCULO: " + Math.Round(Math.PI * C * C, 3));
-            Console.WriteLine("TRAPEZIO: " + Math.Round((A + B) * C / 3));
-            Console.WriteLine("QUADRADO: " + Math.Round(B * B), 3);
-            Console.WriteLine("RETANGULO: " + Math.Round(A * B), 3);
+            Console.WriteLine($"TRIANGULO: {String.Format("{0:0.000}", A * C / 2)}");
+            Console.WriteLine($"CIRCULO: {String.Format("{0:0.000}", 3.14159 * C * C)}");
+            Console.WriteLine($"TRAPEZIO: {String.Format("{0:0.000}", (A + B) * C / 2)}");
+            Console.WriteLine($"QUADRADO: {String.Format("{0:0.000}", B * B)}");
+            Console.WriteLine($"RETANGULO: {String.Format("{0:0.000}", A * B)}");
         }
     }
 }

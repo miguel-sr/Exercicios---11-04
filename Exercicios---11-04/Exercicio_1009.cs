@@ -4,18 +4,12 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Qual o nome do funcionário?");
-            var nomeFuncionario = Console.ReadLine();
+            string nomeFuncionario = Console.ReadLine();
+            double salarioFixo = Convert.ToDouble(Console.ReadLine());
+            double valorTotalDasVendas = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Qual o salário fixo deste funcionário?");
-            var salarioFixo = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Qual o valor total de vendas realizada por " + nomeFuncionario + "?");
-            var valorTotalDasVendas = Convert.ToDouble(Console.ReadLine());
-
-            var salarioTotal = salarioFixo + valorTotalDasVendas * 0.15;
-
-            Console.WriteLine("O salário final de " + nomeFuncionario + " é de R$" + Math.Round(salarioTotal, 2));
+            double salarioFinal = (salarioFixo + valorTotalDasVendas * 0.15);
+            Console.WriteLine($"TOTAL = R$ {String.Format("{0:0.00}", salarioFinal)}");
 
         }
     }
